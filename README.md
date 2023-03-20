@@ -4,6 +4,7 @@
 
 > CVal is a realtivly stright forward evaltion system. 
 > It Inlcudes a Lexer, parser, and a Intpreter!!!!<br><br>
+> The program also comes with a built in ast explorer so have fun messing with it like I did :)<br><br>
 > One Note is you do need to give the program a file for it to run!!!
 `./NameOfProgam ./NameOfInputFile` <br><br>
 > ***If You find any errors or find any issues with the program please don't hesitate to report them.<br><br>***
