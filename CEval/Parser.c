@@ -56,10 +56,10 @@ static ASTNode *Parser_factor(Parser *parser){
             return ASTNode_BinOp_init(NULL, Parser_factor(parser),tok);
         case TT_NOT: 
             Parser_eat(parser, tok->type);
-            return ASTNode_BinOp_init(NULL, Parser_expr(parser),tok);
+            return ASTNode_BinOp_init(NULL, Parser_factor(parser),tok);
         case TT_BW_NOT: 
             Parser_eat(parser, tok->type);
-            return ASTNode_BinOp_init(NULL, Parser_expr(parser),tok);
+            return ASTNode_BinOp_init(NULL, Parser_factor(parser),tok);
         case TT_LPAREN:
             Parser_eat(parser, TT_LPAREN);
             ASTNode *node = Parser_expr(parser);
