@@ -163,31 +163,31 @@ static int Evaluator_parseBooleanExpression(ASTNode *ast){
 
     switch(ast->token->type){
         case TT_NOT:
-             printf("\n!%f = %f", right, !right);
+             printf("\n!%f = %d", right, !right);
              return !right;
         case TT_DOUBLEEQUAL:
-             printf("\n%f == %f = %f", left, right, left == right);
+             printf("\n%f == %f = %d", left, right, left == right);
              return left == right;
         case TT_NOTEQUAL:
-             printf("\n%f != %f = %f", left, right, left != right);
+             printf("\n%f != %f = %d", left, right, left != right);
              return left != right;
         case TT_LESSTHAN:
-             printf("\n%f < %f = %f", left, right, left < right);
+             printf("\n%f < %f = %d", left, right, left < right);
              return left < right;
         case TT_LESSTHANOREQUAL:
-             printf("\n%f <= %f = %f", left, right, left <= right);
+             printf("\n%f <= %f = %d", left, right, left <= right);
              return left <= right;
         case TT_GREATERTHAN:
-             printf("\n%f > %f = %f", left, right, left > right);
+             printf("\n%f > %f = %d", left, right, left > right);
              return left > right;
         case TT_GREATEROREQUAL:
-             printf("\n%f >= %f = %f", left, right, left >= right);
+             printf("\n%f >= %f = %d", left, right, left >= right);
              return left >= right;
         case TT_AND:
-             printf("\n%f && %f = %f", left, right, left && right);
+             printf("\n%f && %f = %d", left, right, left && right);
              return left && right;
         case TT_OR:
-             printf("\n%f || %f = %f", left, right, left || right);
+             printf("\n%f || %f = %d", left, right, left || right);
              return left || right;
     }
     return 0;
